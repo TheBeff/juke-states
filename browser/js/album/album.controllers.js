@@ -34,8 +34,7 @@ juke.controller('AlbumCtrl', function ($scope, $log, PlayerFactory, AlbumFactory
     return PlayerFactory.isPlaying() && PlayerFactory.getCurrentSong() === song;
   };
 
-  console.log($stateParams.id);
-  $scope.theAlbum = $stateParams.id;
+  $scope.theAlbumId = $stateParams.id;
 
 });
 
